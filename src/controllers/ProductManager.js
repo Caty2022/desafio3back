@@ -54,9 +54,9 @@ const path = "./productos.json";
       const buscado = arrayProductos.find((item) => item.id === id);
 
       if (buscado) {
-        console.log(buscado);
+        return(buscado);
       } else {
-        console.log("Producto no encontrado");
+        return("Producto no encontrado");
       }
     } catch (error) {
       console.error("Error al buscar producto por ID");
